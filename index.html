@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>City As System Placeholder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="lib/three.js"></script>
+    <script src = "js/city.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    <a-scene>
+
+    <a-assets>
+        <img id="bkg" src = "model/background.jpeg"></img>
+    </a-assets>
+
+        <a-sky src="#bkg"></a-sky>
+        <a-entity gltf-model="url(model/1.glb)" position="0 0 0"></a-entity>
+        <a-entity gltf-model="url(model/2.glb)" position="0 0 0"></a-entity>
+    </a-scene> 
+
+  </body>
+</html>
